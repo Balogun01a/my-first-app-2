@@ -3,45 +3,520 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wasiu O. Balogun</title>
+  <title>Tax Professional Solutions | Income & Business Tax Specialists</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <div class="avatar">WB</div>
-      <h1>Wasiu O. Balogun, PMP<sup>®</sup></h1>
-      <p class="location">Arlington, Texas</p>
-    </section>
 
-    <section class="bio">
-      <h2>About</h2>
-      <p>
-        Experienced SAP professional and certified Project Management Professional (PMP)<sup>®</sup>
-        with expertise in SAP Implementations, Customizations, and Configurations in S/4HANA.
-        Currently at KAZ Global Consulting, Dallas, TX. Graduate of The University of Texas at Arlington.
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-icon">&#9670;</span>
+        Tax Professional <span>Solutions</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="btn-nav">Get Started</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">Trusted Tax Professionals</div>
+      <h1>Expert Tax Solutions<br />for <span class="highlight">Individuals &amp; Businesses</span></h1>
+      <p class="hero-sub">
+        Specializing in income tax and business tax services that maximize your refund,
+        minimize your liability, and keep your finances on solid ground.
       </p>
-    </section>
-
-    <section class="certs">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Project Management Professional (PMP)<sup>®</sup></li>
-        <li>SAP Certified Application Professional &mdash; Financials in S/4HANA</li>
-        <li>SAP Certified Associate &mdash; SAP Activate Project Manager</li>
-        <li>AWS Partner: Accreditation (Business)</li>
-      </ul>
-    </section>
-
-    <section class="socials">
-      <h2>Connect</h2>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/wbalogun" target="_blank" rel="noopener noreferrer" class="btn linkedin">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.104v1.561h.046c.432-.818 1.49-1.681 3.067-1.681 3.28 0 3.884 2.159 3.884 4.965v6.607zM5.337 7.433a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zm1.554 13.019H3.783V9h3.108v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          LinkedIn
-        </a>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Schedule a Free Consultation</a>
+        <a href="#services" class="btn btn-outline">View Our Services</a>
       </div>
-    </section>
-  </main>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3,500+</span>
+          <span class="stat-label">Clients Served</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">$12M+</span>
+          <span class="stat-label">Tax Savings Secured</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container trust-inner">
+      <span class="trust-label">Certified &amp; Accredited</span>
+      <div class="trust-badges">
+        <div class="badge">CPA Certified</div>
+        <div class="badge">IRS Enrolled Agent</div>
+        <div class="badge">AICPA Member</div>
+        <div class="badge">NATP Member</div>
+        <div class="badge">BBB Accredited A+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What We Offer</p>
+        <h2>Comprehensive Tax &amp; Accounting Services</h2>
+        <p class="section-sub">
+          From individual returns to complex business filings, we handle every aspect
+          of your tax and financial needs with precision and care.
+        </p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card featured">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
+          </div>
+          <div class="service-badge">Most Popular</div>
+          <h3>Individual Income Tax</h3>
+          <p>Accurate, thorough preparation of federal and state income tax returns. We identify every deduction and credit you qualify for to maximize your refund.</p>
+          <ul class="service-features">
+            <li>Federal &amp; state returns</li>
+            <li>W-2, 1099, K-1 reporting</li>
+            <li>Investment &amp; rental income</li>
+            <li>Prior year amendments</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <div class="service-card featured">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <div class="service-badge">Specialist</div>
+          <h3>Business Tax Returns</h3>
+          <p>Expert preparation of business returns for all entity types — sole proprietors, LLCs, S-Corps, C-Corps, and partnerships — with strategic tax planning built in.</p>
+          <ul class="service-features">
+            <li>Form 1065, 1120, 1120-S</li>
+            <li>Schedule C &amp; self-employment</li>
+            <li>Payroll tax compliance</li>
+            <li>Multi-state filings</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Tax Planning &amp; Strategy</h3>
+          <p>Proactive year-round planning to minimize your tax burden through legal strategies, timing decisions, and entity structuring advice.</p>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h18v18H3z"/><path d="M3 9h18M3 15h18M9 3v18"/></svg>
+          </div>
+          <h3>Bookkeeping &amp; Accounting</h3>
+          <p>Monthly and quarterly bookkeeping services to keep your records accurate, compliant, and ready for tax season — all year long.</p>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>IRS Audit Representation</h3>
+          <p>Professional representation if you face an IRS or state tax audit. We handle all communications and negotiate on your behalf to resolve issues favorably.</p>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 1 0 0 7h5a3.5 3.5 0 1 1 0 7H6"/></svg>
+          </div>
+          <h3>Tax Debt Resolution</h3>
+          <p>Facing back taxes or IRS notices? We negotiate payment plans, offers in compromise, and penalty abatements to resolve your tax debt effectively.</p>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container about-inner">
+      <div class="about-visual">
+        <div class="about-img-wrap">
+          <div class="about-img-placeholder">
+            <svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="40" r="26" fill="#c9a84c" opacity="0.15"/><circle cx="60" cy="40" r="20" fill="#c9a84c" opacity="0.25"/><path d="M20 100c0-22.1 17.9-40 40-40s40 17.9 40 40" fill="#c9a84c" opacity="0.15"/></svg>
+          </div>
+          <div class="about-card-float">
+            <span class="float-num">20+</span>
+            <span class="float-label">Years of Excellence</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag">About Us</p>
+        <h2>Your Trusted Partner in Tax &amp; Financial Success</h2>
+        <p>
+          Tax Professional Solutions is a full-service tax advisory practice trusted by thousands
+          of individuals, families, and businesses across the Grand Prairie and DFW area.
+        </p>
+        <p>
+          Our team of Certified Public Accountants and IRS Enrolled Agents brings deep expertise
+          in income and business taxation. We stay current with the latest tax law changes — so you
+          don't have to. Whether you're filing a straightforward W-2 return or navigating complex
+          multi-entity business structures, we deliver accurate, personalized service every time.
+        </p>
+        <div class="about-values">
+          <div class="value-item">
+            <div class="value-icon">&#10003;</div>
+            <div>
+              <strong>Accuracy Guaranteed</strong>
+              <p>We stand behind every return we prepare with our accuracy guarantee.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">&#10003;</div>
+            <div>
+              <strong>Year-Round Support</strong>
+              <p>We're available 12 months a year — not just during tax season.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">&#10003;</div>
+            <div>
+              <strong>Confidential &amp; Secure</strong>
+              <p>Your financial data is protected with bank-level security protocols.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="why-us section" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Why Choose Us</p>
+        <h2>The TPS Difference</h2>
+        <p class="section-sub">We combine professional expertise with personal attention to deliver results that matter.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">01</div>
+          <h3>Specialized Expertise</h3>
+          <p>Our team focuses exclusively on tax and accounting — it's all we do, and we do it exceptionally well. No generalists here.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02</div>
+          <h3>Maximum Refunds</h3>
+          <p>Our thorough review process ensures we identify every deduction and credit available to you, putting more money back in your pocket.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03</div>
+          <h3>Transparent Pricing</h3>
+          <p>No surprise fees. We provide upfront quotes and only charge for the services you need. Your invoice matches your estimate — always.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">04</div>
+          <h3>Personalized Service</h3>
+          <p>You work directly with your assigned tax professional — not a rotating team of strangers — building a relationship that improves year over year.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">05</div>
+          <h3>Fast Turnaround</h3>
+          <p>Most returns completed within 3–5 business days. Urgent situations? We offer expedited processing when you need results fast.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">06</div>
+          <h3>Digital Convenience</h3>
+          <p>Upload documents online, sign electronically, and receive your completed return digitally. No need to visit our office unless you want to.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Client Reviews</p>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Tax Professional Solutions saved my small business thousands in taxes last year. Their proactive planning and knowledge of business deductions is unmatched. I won't go anywhere else."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MR</div>
+            <div>
+              <strong>Marcus R.</strong>
+              <span>Small Business Owner</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"I had a scary IRS audit and Tax Professional Solutions handled everything. They were professional, calm, and resolved the issue with zero additional tax owed. Absolute lifesavers."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SL</div>
+            <div>
+              <strong>Sandra L.</strong>
+              <span>Freelance Consultant</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Switched from a big national chain and the difference is night and day. Tax Professional Solutions actually knows my situation and gives personalized advice. My refund jumped by $2,400!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div>
+              <strong>David K.</strong>
+              <span>Real Estate Investor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Ready to Maximize Your Tax Savings?</h2>
+        <p>Schedule your free 30-minute consultation today. No obligation, no pressure — just expert advice.</p>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-lg">Book Free Consultation</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <p class="section-tag">Get In Touch</p>
+        <h2>Let's Start with a Free Conversation</h2>
+        <p>Have questions about your taxes or want to discuss how we can help? Reach out — we respond within one business day.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6 6l.72-.72a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <span>469-858-0069</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <span>info@happyreturnstax.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Office</strong>
+              <span>2100 N. HWY 360, STE 300B<br />Grand Prairie, TX 75050</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div>
+              <strong>Hours</strong>
+              <span>Mon–Fri: 9am–6pm<br />Sat: 10am–3pm (Tax Season)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <h3>Send Us a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="469-858-0069" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="individual-tax">Individual Income Tax</option>
+              <option value="business-tax">Business Tax Return</option>
+              <option value="tax-planning">Tax Planning &amp; Strategy</option>
+              <option value="bookkeeping">Bookkeeping &amp; Accounting</option>
+              <option value="irs-audit">IRS Audit Representation</option>
+              <option value="tax-debt">Tax Debt Resolution</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us a little about your situation..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-note">We respect your privacy. Your information is never shared.</p>
+        </form>
+        <div class="form-success" id="form-success" style="display:none;">
+          <div class="success-icon">&#10003;</div>
+          <h3>Message Received!</h3>
+          <p>Thank you for reaching out. A member of our team will contact you within one business day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-light">
+          <span class="logo-icon">&#9670;</span>
+          Tax Professional <span>Solutions</span>
+        </a>
+        <p>Trusted tax and accounting professionals helping individuals and businesses in the DFW area navigate their financial journey.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Individual Income Tax</a></li>
+            <li><a href="#services">Business Tax Returns</a></li>
+            <li><a href="#services">Tax Planning</a></li>
+            <li><a href="#services">Bookkeeping</a></li>
+            <li><a href="#services">IRS Representation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>469-858-0069</li>
+            <li>info@happyreturnstax.com</li>
+            <li>2100 N. HWY 360, STE 300B</li>
+            <li>Grand Prairie, TX 75050</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Tax Professional Solutions. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky nav shadow
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Form submit
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.querySelector('.contact-form').style.display = 'none';
+      document.getElementById('form-success').style.display = 'flex';
+    }
+
+    // Intersection observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .why-card, .testimonial-card').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
